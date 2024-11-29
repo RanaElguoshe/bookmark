@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="./css/bookStyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mt-5 mb-5">Bookmarker</h1>
+    <div class=" bb ">
+        <div class="d-flex justify-content-center align-items-center mt-4">
+            <p><i class="bookIcon fa-solid fa-bookmark m-3"></i></p>
+            <p class="bookP">Bookmark your favorite sites  </p>
+            <p><i class="bookIcon fa-solid fa-bookmark m-3"></i></p>
+        </div>
+        <div class="">
+             
+          <label class="labelSiteName mb-3"><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label>
+          <input id="siteItem" type="text" placeholder="Bookmark Name" class="form-control mb-3">
+        
+        </div>
+        <div class="">
+             
+            <label class="labelSiteName mb-3"><i class="fa-solid fa-link me-2"></i>Site Name</label>
+            <input id="urlItem" type="url" placeholder="website url" class="form-control mb-3">  
+          </div>
+          <div class="text-center">
+            <button onclick="addSite()" class="mb-4 bsubmit btn btn-primary">submit</button>
+          </div>
+    </div>
+    <table  class="table mt-4 text-center">
+        <thead>
+            <tr>
+                <th  class="yy text-capitalize">index</th>
+                <th class="yy text-capitalize">web name</th>
+                <th class="yy text-capitalize">visit</th>
+                <th class="yy text-capitalize">delete</th>
+            </tr>
+        </thead>
+        <thead id="tableItem">
+
+        </thead>
+    </table> 
+</div>
+<script src="./all.min.js"></script>
+    <script src="./bookMain.js"></script>
+</body>
+</html>
